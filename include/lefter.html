@@ -1,0 +1,26 @@
+<div class="left mainLeft">
+    	<div class="sidebar">
+        	<div class="sidebar_title">
+            	<strong class="sidebar_titleStrong"><stl:channel type="Title" topLevel="1"></stl:channel></strong>
+            </div>
+            <div class="sidebar_main">
+            	<ul class="sidebarUl">
+                <stl:channels topLevel="1">
+                <stl:if testType="UpChannelOrSelf">
+                <stl:successTemplate>
+                	<li class="sidebarLI">
+                    	<stl:a class="sidebar_a active"></stl:a>
+                    </li>
+                    </stl:successTemplate>
+                    <stl:failureTemplate>
+                    <li class="sidebarLI">
+                    	<stl:a class="sidebar_a"></stl:a>
+                    </li>
+                    </stl:failureTemplate>
+                    </stl:if>
+                	</stl:channels>
+                </ul>
+            </div>
+            <div class="sidebar_footerBj"></div>
+        </div>
+    </div>

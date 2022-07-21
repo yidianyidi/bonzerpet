@@ -1,0 +1,58 @@
+<div class="header">
+	<div class="header_top clear">
+    	<div class="logo left">
+        	<!--logo尺寸为160*62-->
+            <stl:a topLevel="0"><stl:contents channelIndex="网站配置" channelName="网站LOGO" totalNum="1"><stl:image width="160" height="62"></stl:image></stl:contents></stl:a>
+        	
+        </div>
+    	<div class="serviceHotline right">
+        	<p><span class="serviceHotlinefont1">全国服务热线</span></p>
+        	<p><span class="serviceHotlinefont2"><strong><stl:contents channelIndex="网站配置" totalNum="1" channelName="网站顶部电话"><stl:content type="SubTitle"></stl:content></stl:contents></strong></span></p>
+        </div>
+    </div>
+    <div class="header_bottom">
+    	<div class="navBox">
+            <ul class="nav clear">
+            	<li class="nav_li left">
+                <stl:if testType="TopLevel" testOperate="Equals" testValue="0">
+                <stl:successTemplate>
+                	<stl:a class="nav_a active" topLevel="0"></stl:a>
+                    </stl:successTemplate>
+                    <stl:failureTemplate>
+                    <stl:a class="nav_a" topLevel="0"></stl:a>
+                    </stl:failureTemplate>
+                    </stl:if>
+                </li>
+                <stl:channels topLevel="0" groupChannel="导航">
+                <stl:if testType="UpChannelOrSelf">
+                <stl:successTemplate>
+            	<li class="nav_li left">
+                	<stl:a class="nav_a active"></stl:a>
+                    <ul>
+                    <stl:channels>
+                    	<li>
+                        	<stl:a></stl:a>
+                        </li>
+                    	</stl:channels>
+                    </ul>
+                </li>
+                </stl:successTemplate>
+                <stl:failureTemplate>
+                <li class="nav_li left">
+                	<stl:a class="nav_a"></stl:a>
+                    <ul>
+                    <stl:channels>
+                    	<li>
+                        	<stl:a></stl:a>
+                        </li>
+                    	</stl:channels>
+                    </ul>
+                </li>
+                </stl:failureTemplate>
+                </stl:if>
+                </stl:channels>
+            </ul>
+        </div>
+        
+    </div>
+</div>
